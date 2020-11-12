@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+h2 {
+    color: var(--text-clr);
+    font-size: 1.5rem;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+:root {
+    --text-clr: #4f4f4f;
+}
+
+p {
+    color: #6c757d;
+}
+
+.main_cart {
+    background: #fff;
+}
+
+.card {
+    border: none;
+    outline: none;
+}
+
+.product_img>img {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    object-fit: fill;
+
+}
+
+.product_name {
+    color: black;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.card-title>p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* .shadows {
+    background-color: var(--text-clr);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+} */
+.remove_wish>p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.price_money>h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.set_quantity {
+    position: relative;
+}
+
+.set_quantity::after {
+    content: "(Note,1 piece)";
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;
+    right: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.page-link {
+    line-height: 16px;
+    width: 45px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #495057;
+}
+
+.page-item>input {
+    line-height: 22px;
+    padding: 3px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-link:hover {
+    text-decoration: none;
+    color: #495057;
+    outline: none !important;
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+.price_indiv p {
+    font-size: 1.1rem;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.fa-trash:hover {
+    color: #25d366;
+}
+
+@media (max-width: 500px) {
+    .card-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .card-title>h3 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .pagin_block {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .remove_wish {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .remove_wish>p {
+        margin-right: 8px;
+    }
+
+}
+
+@media (min-width:280px) {
+    .remove_wish {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .price_money>h3 {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 8px;
+    }
+}

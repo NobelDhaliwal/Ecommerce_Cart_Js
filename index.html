@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Ecommerce_Cart/CSS/style.css">
+    <script src="https://kit.fontawesome.com/e5452d5c1a.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!--  -->
+    <title>Shopping_Cart</title>
+</head>
+
+<body class="bg-light">
+    <!-- for making responsive -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                    <!-- Left side div  -->
+                    <div class="col-md-12 col-lg-8 col-11 main_cart mx-auto shadow mb-lg-0 mb-5">
+                        <!-- first cart product -->
+                        <div class="card  border-0 p-4">
+                            <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
+                            <div class="row gx-0">
+
+                                <!-- cart image div -->
+                                <div
+                                    class=" col-md-5 col-11 mx-auto bg-light d-flex align-items-center justify-content-center product_img shadow">
+                                    <img src="/Ecommerce_Cart/Images/short_red_dress.jpeg" class="img-fluid "
+                                        alt="cart_img">
+                                </div>
+
+                                <!-- card product details -->
+                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+                                        <!-- PRODUCT NAME -->
+                                        <div class="col-lg-6 col-xxl-6 col-sm-12 col-md-6  card-title ">
+                                            <h3 class="mb-4 ">Floral Chiffon Dress</h3>
+                                            <p class="mb-2">DRESS - RED CHIFFON</p>
+                                            <p class="mb-2">COLOR: RED</p>
+                                            <p class="mb-3">SIZE: M</p>
+                                        </div>
+                                        <!-- Quantity inc dec -->
+                                        <div class="col-lg-6 col-md-6 col-xxl-6 col-sm-12 mb-sm-3 pagin_block ">
+                                            <ul class="pagination justify-content-end set_quantity">
+                                                <li class="page-item"><button class="page-link"
+                                                        onclick="decNo('textbox','itemValue')">
+                                                        <i class="fas fa-minus"></i></button></li>
+                                                <li class="page-item"><input type="text" name="" class="page-link"
+                                                        value="0" id="textbox"></li>
+                                                <li class="page-item"><button class="page-link"
+                                                        onclick="incNo('textbox','itemValue')"><i
+                                                            class="fas fa-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Remover move and price -->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <p><i class="fas fa-trash "></i> REMOVE ITEM</p>
+                                            <p><i class="fas fa-heart"></i> MOVE TO WISHLIST</p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end price_money">
+                                            <h3>$<span id="itemValue">0.00</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <!-- second cart product -->
+                        <div class="card  border-0 p-4 ">
+                            <div class="row gx-0">
+                                <!-- cart image div -->
+                                <div class=" col-md-5 col-11 mx-auto  product_img shadow">
+                                    <img src="/Ecommerce_Cart/Images/white_dress.jpeg" class="img-fluid "
+                                        alt="cart_img">
+                                </div>
+
+                                <!-- card product details -->
+                                <div class="col-md-7 col-sm-11 col-lg-7 mx-auto px-4 mt-2">
+                                    <div class="row">
+                                        <!-- PRODUCT NAME -->
+                                        <div class="col-lg-6 col-xxl-6 col-sm-12 col-md-6 card-title ">
+                                            <h3 class="mb-4">ONLY A WOMAN DRESS BLACK</h3>
+                                            <p class="mb-2">DRESS - SHORT </p>
+                                            <p class="mb-2">COLOR: WHITE & BLACK</p>
+                                            <p class="mb-3">SIZE: S</p>
+                                        </div>
+                                        <!-- Quantity inc dec -->
+                                        <div class="col-6 pagin_block">
+                                            <ul class="pagination justify-content-end set_quantity">
+                                                <li class="page-item"><button class="page-link "
+                                                        onclick="decNo('textbox1','itemValue1')">
+                                                        <i class="fas fa-minus"></i></button></li>
+                                                <li class="page-item"><input type="text" name="" class="page-link"
+                                                        value="0" id="textbox1"></li>
+                                                </li>
+                                                <li class="page-item"><button class="page-link"
+                                                        onclick="incNo('textbox1','itemValue1')"><i
+                                                            class="fas fa-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Remover move and price -->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <p><i class="fas fa-trash"></i> REMOVE ITEM</p>
+                                            <p><i class="fas fa-heart"></i> MOVE TO WISHLIST</p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end price_money">
+                                            <h3>$<span id="itemValue1">0.00</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE DIV -->
+                    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                        <div class="right_side p-3 shadow bg-white">
+                            <h2 class="product_name mb-5">The Total Amount Of</h2>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Product amount</p>
+                                <p>$<span id="product_total_amt">0.00 </span></p>
+                            </div>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <p>Shipping Charge</p>
+                                <p>$<span id="shipping_charge">50.0</span></p>
+                            </div>
+                            <hr />
+                            <div class="total-amt d-flex flex-row justify-content-between font-weight-bold">
+                                <p>The total amount of (including VAT)</p>
+                                <p>$<span id="total_cart_amt">0.00</span></p>
+                            </div>
+                            <button class="btn btn-primary text-uppercase">CHECKOUT</button>
+                        </div>
+                        <!-- discount code part -->
+                        <div class="discount_code mt-3 shadow">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="d-flex justify-content-between" data-toggle="collapse"
+                                        href="#collapseExample" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        Add a discount code(Optional)
+                                        <span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="mt-3">
+                                            <input type="text" name="" id="discount_code1"
+                                                class="form-control font-weight-bold"
+                                                placeholder="Enter the discount code">
+                                            <small id="err_thrw" class="text-dark mt-3">Code is NOBEL20</small>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm mt-3"
+                                            onClick="discount_code()">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- discount code ends -->
+                        <div class="mt-3 shadow p-3 bg-white">
+                            <div class="pt-4">
+                                <h5 class="mb-4">Expected delivery date</h5>
+                                <p>Dec 5th 2020 - Dec 10th 2020</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first and then Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
+        integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        var product_total_amount = document.getElementById("product_total_amt");
+        var total_cart_amount = document.getElementById("total_cart_amt");
+        var shipping_charg = document.getElementById("shipping_charge");
+        var discountCode = document.getElementById("discount_code1");
+
+        const decNo = (incdec, itemprice) => {
+            let itemval = document.getElementById(incdec);
+            let itemprc = document.getElementById(itemprice);
+            console.log(itemval.value);
+            if (itemval.value <= 0) {
+                itemval.value = 0;
+                alert("Negative value not allowed");
+            }
+            else {
+                itemval.value = parseInt(itemval.value) - 1;
+                itemval.style.background = "#fff";
+                itemval.style.color = "#000";
+                itemprc.innerHTML = parseInt(itemprc.innerHTML) - 15;
+                product_total_amount.innerHTML = parseInt(product_total_amount.innerHTML) - 15;
+                total_cart_amount.innerHTML = parseInt(product_total_amount.innerHTML) + parseInt(shipping_charg.innerHTML);
+            }
+        };
+        const incNo = (incdec, itemprice) => {
+            let itemval = document.getElementById(incdec);
+            let itemprc = document.getElementById(itemprice);
+            console.log(itemval.value)
+            console.log(itemprc.innerHTML);
+            if (itemval.value >= 5) {
+                itemval.value = 5;
+                alert("max 5 allowed");
+                itemval.style.background = "red";
+                itemval.style.color = "#fff";
+            }
+            else {
+                itemval.value = parseInt(itemval.value) + 1;
+                itemprc.innerHTML = parseInt(itemprc.innerHTML) + 15;
+                product_total_amount.innerHTML = parseInt(product_total_amount.innerHTML) + 15;
+                total_cart_amount.innerHTML = parseInt(product_total_amount.innerHTML) + parseInt(shipping_charg.innerHTML);
+            }
+        };
+        const discount_code = () => {
+            let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+            let error_throw = document.getElementById("err_thrw");
+            if (discountCode.value === "NOBEL20") {
+                let newtotalamt = totalamtcurr - 15;
+                total_cart_amt.innerHTML = newtotalamt;
+                error_throw.innerHTML = "HURRAY!CODE IS VALID";
+            }
+            else {
+                error_throw.innerHTML = "TRY AGAIN! WITH VALID CODE"
+            }
+        };
+    </script>
+</body>
+
+</html>
