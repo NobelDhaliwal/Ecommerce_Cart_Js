@@ -1,9 +1,13 @@
 {
   "name": "ecommerce_cart",
+  "homepage": "http://NobelDhaliwal.github.io/Ecommerce_Cart_Js",
   "version": "1.0.0",
   "description": "Ecommerce Cart",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+ "deploy": "gh-pages -d build",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
